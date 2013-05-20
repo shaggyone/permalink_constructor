@@ -1,5 +1,8 @@
 # -*- encoding : utf-8 -*-
 require 'spec_helper'
+require "active_model"
+require "active_model/validations"
+require "active_record/callbacks"
 
 describe PermalinkConstructor do
   let(:validate_uniqueness) { false }
@@ -22,7 +25,7 @@ describe PermalinkConstructor do
       include ActiveRecord::Callbacks
       # include ActiveModel::Conversion
       # extend ActiveModel::Naming
-      include ModelIncludes::Permalink
+      include PermalinkConstructor
 
       attr_accessor :id, :title_field, :permalink_field
 
