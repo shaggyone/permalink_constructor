@@ -22,6 +22,7 @@ And then execute:
 
 ## Usage
 Example of usage
+
     class Article
       include PermalinkConstructor
       belongs_to :category
@@ -40,6 +41,7 @@ Example of usage
     end
 
 Тот же пример с комментариями по русски.
+
     class Article
       include PermalinkConstructor
       belongs_to :category
