@@ -1,5 +1,6 @@
 require "permalink_constructor/version"
 require "active_support/concern"
+require "russian"
 
 module PermalinkConstructor
   extend ActiveSupport::Concern
